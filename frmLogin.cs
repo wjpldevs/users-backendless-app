@@ -32,6 +32,7 @@ namespace users_backendless_app
                         MessageBox.Show("Inicio de sesión exitoso", "Incio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         frm1.Show();
                         this.Hide();
+                        this.Invalidate();
                     },
                     fault =>
                     {
@@ -59,9 +60,11 @@ namespace users_backendless_app
               {
                   if (isValidLogin)
                   {
-                      Form1 frm1 = new Form1();
-                      frm1.Show();
-                      this.Hide();
+                      if (!Application.OpenForms.OfType<Form1>().Any()) {
+                          Form1 frm1 = new Form1();
+                          frm1.Show();
+                          this.Hide();
+                      }
                   }
                   else {
                       this.Show();

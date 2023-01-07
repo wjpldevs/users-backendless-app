@@ -36,12 +36,12 @@
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAgregarUsuario = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEmailRegistro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombreRegistro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtContraseniaRegistro = new System.Windows.Forms.TextBox();
             this.btnRefrescarUsuarios = new System.Windows.Forms.Button();
             this.btnEliminarUsuario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -133,13 +133,13 @@
             this.btnAgregarUsuario.UseVisualStyleBackColor = false;
             this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
             // 
-            // textBox1
+            // txtEmailRegistro
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(21, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(318, 27);
-            this.textBox1.TabIndex = 10;
+            this.txtEmailRegistro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmailRegistro.Location = new System.Drawing.Point(21, 153);
+            this.txtEmailRegistro.Name = "txtEmailRegistro";
+            this.txtEmailRegistro.Size = new System.Drawing.Size(318, 27);
+            this.txtEmailRegistro.TabIndex = 10;
             // 
             // label2
             // 
@@ -159,13 +159,13 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Nombre";
             // 
-            // textBox2
+            // txtNombreRegistro
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(21, 252);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(318, 27);
-            this.textBox2.TabIndex = 12;
+            this.txtNombreRegistro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombreRegistro.Location = new System.Drawing.Point(21, 252);
+            this.txtNombreRegistro.Name = "txtNombreRegistro";
+            this.txtNombreRegistro.Size = new System.Drawing.Size(318, 27);
+            this.txtNombreRegistro.TabIndex = 12;
             // 
             // label4
             // 
@@ -176,17 +176,17 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Contraseña";
             // 
-            // textBox3
+            // txtContraseniaRegistro
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(21, 361);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(318, 27);
-            this.textBox3.TabIndex = 14;
+            this.txtContraseniaRegistro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtContraseniaRegistro.Location = new System.Drawing.Point(21, 361);
+            this.txtContraseniaRegistro.Name = "txtContraseniaRegistro";
+            this.txtContraseniaRegistro.Size = new System.Drawing.Size(318, 27);
+            this.txtContraseniaRegistro.TabIndex = 14;
             // 
             // btnRefrescarUsuarios
             // 
-            this.btnRefrescarUsuarios.BackColor = System.Drawing.Color.Green;
+            this.btnRefrescarUsuarios.BackColor = System.Drawing.Color.LightSlateGray;
             this.btnRefrescarUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRefrescarUsuarios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRefrescarUsuarios.ForeColor = System.Drawing.Color.White;
@@ -222,11 +222,11 @@
             this.Controls.Add(this.btnEliminarUsuario);
             this.Controls.Add(this.btnRefrescarUsuarios);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtContraseniaRegistro);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNombreRegistro);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEmailRegistro);
             this.Controls.Add(this.btnAgregarUsuario);
             this.Controls.Add(this.dtgUsuarios);
             this.Controls.Add(this.btnCerrarSesion);
@@ -256,12 +256,12 @@
         private DataGridViewTextBoxColumn colEmail;
         private DataGridViewTextBoxColumn colName;
         private Button btnAgregarUsuario;
-        private TextBox textBox1;
+        private TextBox txtEmailRegistro;
         private Label label2;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox txtNombreRegistro;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox txtContraseniaRegistro;
         private Button btnRefrescarUsuarios;
         private Button btnEliminarUsuario;
     }

@@ -41,9 +41,38 @@ namespace users_backendless_app
 
             string login = txtEmail.Text;
             string password = txtPass.Text;
-            Backendless.UserService.Login(login, password, callback);
+            Backendless.UserService.Login(login, password, callback, true);
 
+        }
 
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            this.txtEmail.Focus();
+        }
+
+        private void frmLogin_Activated(object sender, EventArgs e)
+        {
+            this.txtEmail.Focus();
+
+            AsyncCallback<Boolean> callback_isValidLogin = new AsyncCallback<Boolean>(
+              isValidLogin =>
+              {
+                  if (isValidLogin)
+                  {
+                      Form1 frm1 = new Form1();
+                      frm1.Show();
+                      this.Hide();
+                  }
+                  else {
+                      this.Show();
+                  }
+              },
+              fault =>
+              {
+                  MessageBox.Show("Error: " + fault.ToString(), "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+              });
+
+             Backendless.UserService.IsValidLogin(callback_isValidLogin);
         }
     }
 }

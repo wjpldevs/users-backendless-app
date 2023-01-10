@@ -53,6 +53,7 @@ namespace users_backendless_app
 
         private void frmLogin_Activated(object sender, EventArgs e)
         {
+            /*
             this.txtEmail.Focus();
 
             AsyncCallback<Boolean> callback_isValidLogin = new AsyncCallback<Boolean>(
@@ -76,6 +77,7 @@ namespace users_backendless_app
               });
 
              Backendless.UserService.IsValidLogin(callback_isValidLogin);
+            */
         }
     }
 }

@@ -28,9 +28,9 @@ namespace users_backendless_app
                 AsyncCallback<BackendlessUser>(
                     user =>
                     {
-                        Form1 frm1 = new Form1();
                         MessageBox.Show("Inicio de sesión exitoso", "Incio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        frm1.Show();
+                        frmModules forModules = new frmModules();
+                        forModules.Show();
                         this.Hide();
                         this.Invalidate();
                     },
@@ -60,9 +60,9 @@ namespace users_backendless_app
               {
                   if (isValidLogin)
                   {
-                      if (!Application.OpenForms.OfType<Form1>().Any()) {
-                          Form1 frm1 = new Form1();
-                          frm1.Show();
+                      if (!Application.OpenForms.OfType<frmModules>().Any()) {
+                          frmModules forModules = new frmModules();
+                          forModules.Show();
                           this.Hide();
                       }
                   }

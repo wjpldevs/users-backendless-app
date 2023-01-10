@@ -44,5 +44,12 @@ namespace users_backendless_app
             frmUsers.Show();
             this.Hide();
         }
+
+        private void picConfig_Click(object sender, EventArgs e)
+        {
+            frmSettings formSettings = new frmSettings();
+            formSettings.Show();
+            this.Hide();
+        }
     }
 }

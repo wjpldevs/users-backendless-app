@@ -16,5 +16,13 @@ namespace users_backendless_app
         {
             InitializeComponent();
         }
+
+        private void btnBackMaintenance_Click(object sender, EventArgs e)
+        {
+            // TODO: Optimize the way to reference to the forms
+            frmModules formModules = new frmModules();
+            formModules.Show();
+            this.Hide();
+        }
     }
 }

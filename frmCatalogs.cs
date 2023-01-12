@@ -24,5 +24,19 @@ namespace users_backendless_app
             formModules.Show();
             this.Hide();
         }
+
+        private void btnSuppliers_Click(object sender, EventArgs e)
+        {
+            frmSuppliers formSuppliers = new frmSuppliers();
+            formSuppliers.Show();
+            this.Hide();
+        }
+
+        private void btnClients_Click(object sender, EventArgs e)
+        {
+            frmClients formClients = new frmClients();
+            formClients.Show();
+            this.Hide();
+        }
     }
 }

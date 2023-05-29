@@ -120,5 +120,12 @@ namespace users_backendless_app
 
             Backendless.Data.Of("Users").Remove($"objectId = '{selectedObjectId}'", deleteObjectCallback);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmModules modules = new frmModules();
+            this.Hide();
+            modules.Show();
+        }
     }
 }

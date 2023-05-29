@@ -16,5 +16,12 @@ namespace users_backendless_app
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmModules modulos = new frmModules();
+            this.Hide();
+            modulos.Show();
+        }
     }
 }

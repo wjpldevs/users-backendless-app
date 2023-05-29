@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using BackendlessAPI;
+using BackendlessAPI.Async;
 
 namespace users_backendless_app
 {
@@ -42,6 +35,33 @@ namespace users_backendless_app
         {
             Form1 frmUsers = new Form1();
             frmUsers.Show();
+            this.Hide();
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            // do not forget to call Backendless.InitApp in the app initialization code 
+
+            AsyncCallback<Object> logoutCallback = new AsyncCallback<Object>(
+              user =>
+              {
+                  MessageBox.Show("Has cerrado sesion!", "Sesion de usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  this.Hide();
+                  frmLogin login = new frmLogin();
+                  login.Show();
+              },
+              fault =>
+              {
+                  MessageBox.Show("Error al cerrar sesion: " + fault.ToString(), "Error al cerrar sesion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+              });
+
+            Backendless.UserService.Logout(logoutCallback);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmProveedores suppliers = new frmProveedores();
+            suppliers.Show();
             this.Hide();
         }
     }

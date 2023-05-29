@@ -45,6 +45,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnUsers = new System.Windows.Forms.Button();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picModules)).BeginInit();
@@ -97,7 +104,7 @@
             this.btnOrders.BackColor = System.Drawing.Color.Transparent;
             this.btnOrders.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOrders.BackgroundImage")));
             this.btnOrders.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnOrders.Location = new System.Drawing.Point(169, 113);
+            this.btnOrders.Location = new System.Drawing.Point(164, 113);
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.Size = new System.Drawing.Size(223, 128);
             this.btnOrders.TabIndex = 10;
@@ -114,6 +121,7 @@
             this.btnCatalogs.Size = new System.Drawing.Size(229, 128);
             this.btnCatalogs.TabIndex = 11;
             this.btnCatalogs.UseVisualStyleBackColor = false;
+            this.btnCatalogs.Visible = false;
             this.btnCatalogs.Click += new System.EventHandler(this.btnCatalogs_Click);
             // 
             // btnMaintenance
@@ -132,11 +140,11 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.Location = new System.Drawing.Point(334, 12);
+            this.lblTitle.Location = new System.Drawing.Point(415, 13);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(480, 50);
+            this.lblTitle.Size = new System.Drawing.Size(357, 50);
             this.lblTitle.TabIndex = 13;
-            this.lblTitle.Text = "BACKENDLESS USERS APP";
+            this.lblTitle.Text = "BACKENDLESS APP";
             // 
             // label2
             // 
@@ -169,11 +177,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(199, 244);
+            this.label5.Location = new System.Drawing.Point(236, 244);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 28);
+            this.label5.Size = new System.Drawing.Size(80, 28);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Ordenes de pago";
+            this.label5.Text = "Clientes";
             // 
             // label6
             // 
@@ -184,6 +192,7 @@
             this.label6.Size = new System.Drawing.Size(100, 28);
             this.label6.TabIndex = 18;
             this.label6.Text = "Catalogos";
+            this.label6.Visible = false;
             // 
             // label7
             // 
@@ -199,7 +208,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(242, 467);
+            this.label1.Location = new System.Drawing.Point(564, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 28);
             this.label1.TabIndex = 21;
@@ -210,19 +219,106 @@
             this.btnUsers.BackColor = System.Drawing.Color.Transparent;
             this.btnUsers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUsers.BackgroundImage")));
             this.btnUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUsers.Location = new System.Drawing.Point(169, 336);
+            this.btnUsers.Location = new System.Drawing.Point(491, 113);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(223, 128);
             this.btnUsers.TabIndex = 20;
             this.btnUsers.UseVisualStyleBackColor = false;
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.Crimson;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(973, 13);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(119, 31);
+            this.btnCerrarSesion.TabIndex = 22;
+            this.btnCerrarSesion.Text = "Cerrar sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(220, 453);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(121, 28);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Proveedores";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Location = new System.Drawing.Point(164, 322);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(223, 128);
+            this.button1.TabIndex = 23;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(554, 453);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(101, 28);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Productos";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Location = new System.Drawing.Point(491, 322);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(223, 128);
+            this.button2.TabIndex = 25;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(891, 453);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 28);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Ventas";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.Location = new System.Drawing.Point(809, 322);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(223, 128);
+            this.button3.TabIndex = 27;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // frmModules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1104, 540);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnUsers);
             this.Controls.Add(this.label7);
@@ -239,8 +335,11 @@
             this.Controls.Add(this.picModules);
             this.Controls.Add(this.picHome);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmModules";
-            this.Text = "frmModules";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Backendless App - Modulos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picModules)).EndInit();
@@ -268,5 +367,12 @@
         private Label label7;
         private Label label1;
         private Button btnUsers;
+        private Button btnCerrarSesion;
+        private Label label8;
+        private Button button1;
+        private Label label9;
+        private Button button2;
+        private Label label10;
+        private Button button3;
     }
 }

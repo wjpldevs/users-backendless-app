@@ -19,8 +19,8 @@ namespace users_backendless_app
             return shared;
         }
 
-        private string APPLICATION_ID = "9F235ABC-7A37-20DB-FF84-845623BF7800";
-        private string API_KEY = "466979EA-746E-4AA1-AED0-EB564B7C3419";
+        private string APPLICATION_ID = "5C46944E-7CA7-6C53-FF80-756D51F52D00";
+        private string API_KEY = "791995C2-5825-4EA2-9C1F-941561BBAD01";
 
         public APIManager() {
             Backendless.InitApp(APPLICATION_ID, API_KEY);
